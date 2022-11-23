@@ -66,6 +66,15 @@ input{
     font-family: monospace;
 }
 button{
+    background-color: transparent;
+    border: none;
+}
+.btnToggler{
+    background-color: aqua;
+    border: 2px solid black;
+    cursor: pointer;;
+}
+.btnSubir{
     margin-top: 15px;
     height: 25px;
     border-radius: 5px;
@@ -123,4 +132,13 @@ h2{
 }
 #popUp_album{
     background: no-repeat center/100% url("/assets/images/vinilo.png");
+}
+/* Botones */
+.btnEditar,.btnBorrar{
+    width: 25px;
+    cursor: pointer;
+}
+.btnBorrar:hover,.btnEditar:hover{
+    transition-duration: 400ms;
+    transform: scale(1.1);
 }

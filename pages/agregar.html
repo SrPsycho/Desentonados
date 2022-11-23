@@ -7,28 +7,21 @@
     <title>Agregar album</title>
 </head>
 <body>
-    <button data-btnToggler>Agregar un nuevo album</button>
+    <button data-btnToggler class="btnToggler">Agregar un nuevo album</button>
     <div class="pop-up">
         <form data-form id="popUp_album" class="noVisible">
             <h1>Datos del album</h1>
             <input type="text" placeholder="Ingrese el titulo del album" data-tittle>
             <input type="url" placeholder="url de la imagen" data-url>
             <input type="number" placeholder="año" data-year>
-            <button type="submit">Subir album</button>
+            <button type="submit" class="btnSubir">Subir album</button>
         </form>
     </div>
     <section data-body>
         <h2>Álbumes recientes</h2>
         <div  id="padre" data-containter>
             <!-- Aca vab los nodos -->
-            <div class="hijo">
-                <img src="${url}" class="img_album">
-                <h3 class="titulo_album">${tittle}</h3>
-                <h4 class="anio_album">${year}</h4>
-                <div class="botones">
-                 
-                </div>
-                </div>
+            
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="module" src="/controllers/agregar_controller.js""></script>

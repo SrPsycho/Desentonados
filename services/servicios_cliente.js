@@ -7,13 +7,25 @@ const baseDeDatos = (url,tittle,year) => {
         body: JSON.stringify({url,tittle,year,id: uuid.v4()})
     })
 }
-const eliminarCliente = (id) => {
-    return fetch(`http://localhost:3000/perfil/${id}`,{
+const eliminarAlbum = (id) => {
+    return fetch(`http://localhost:3000/cards/${id}`,{
       method: 'DELETE'
     })
-  }
+}
+const editarAlbum = (url,tittle,year,id) => {
+    return fetch(`http://localhost:3000/cards/${id}`,{
+      method: 'PUT',
+      headers: {
+        "Content-Type": "application/json"
+      },body: JSON.stringify({url,tittle,year})
+    })
+    .then(respuesta => console.log(respuesta))
+    .catch(err => console.log(err));
+  };
 
 export const servicios ={
     listaProductos,
-    baseDeDatos
+    baseDeDatos,
+    eliminarAlbum,
+    editarAlbum
 }
