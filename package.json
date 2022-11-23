@@ -1,14 +1,16 @@
 {
-  "name": "pruebas-fetch",
+  "name": "desentonados_commerce",
   "version": "1.0.0",
-  "description": "no se we, pruebas",
+  "description": "Tienda musical online, compra de albums, instrumentos y demás ",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "nada"
+    "commerce",
+    "ecommerce",
+    "musicStore"
   ],
-  "author": "io",
+  "author": "Matias Hausen",
   "license": "ISC"
 }

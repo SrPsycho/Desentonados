@@ -8,10 +8,13 @@
 </head>
 <body>
     <button data-btnToggler class="btnToggler">Agregar un nuevo album</button>
-    <div class="pop-up">
+
+    <div class="pop-up" data-popper>
+        <button data-btnToggler2 class="btnToggler invisible">X</button>
         <form data-form id="popUp_album" class="noVisible">
             <h1>Datos del album</h1>
-            <input type="text" placeholder="Ingrese el titulo del album" data-tittle>
+            <input type="text" placeholder="Titulo" data-tittle>
+            <input type="text" placeholder="Autor" data-author>
             <input type="url" placeholder="url de la imagen" data-url>
             <input type="number" placeholder="año" data-year>
             <button type="submit" class="btnSubir">Subir album</button>
@@ -21,7 +24,6 @@
         <h2>Álbumes recientes</h2>
         <div  id="padre" data-containter>
             <!-- Aca vab los nodos -->
-            
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script type="module" src="/controllers/agregar_controller.js""></script>

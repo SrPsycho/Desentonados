@@ -117,6 +117,11 @@ h2{
     font-family: monospace;
     font-size: 1.1rem;
 }
+.autor_album{
+    font-size: 1rem;
+    font-family: monospace;
+    opacity: 75%;
+}
 .anio_album{
     font-family: monospace;
     font-size: 0.8rem;
@@ -132,6 +137,9 @@ h2{
 }
 #popUp_album{
     background: no-repeat center/100% url("/assets/images/vinilo.png");
+}
+.invisible{
+    display: none;
 }
 /* Botones */
 .btnEditar,.btnBorrar{

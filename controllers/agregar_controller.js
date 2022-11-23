@@ -6,17 +6,19 @@ formulario.addEventListener("submit", (evento) => {
     evento.preventDefault();
     const url = document.querySelector("[data-url]").value;
     const tittle = document.querySelector("[data-tittle]").value;
+    const author = document.querySelector("[data-author]").value; 
     const year = document.querySelector("[data-year]").value;
 
-    servicios.baseDeDatos(url,tittle,year);
+    servicios.baseDeDatos(url,tittle,author,year);
 })
 
-const agregarAlbum = (url,tittle,year,id) => {
+const agregarAlbum = (url,tittle,author,year,id) => {
     const div = document.createElement('div');
     const relleno = `
     <div class="hijo">
         <img src="${url}" class="img_album">
         <h3 class="titulo_album">${tittle}</h3>
+        <h3 class="autor_album">${author}</h3>
         <h4 class="anio_album">${year}</h4>
             <div class="botones">
                 <button id=${id} data-btnEdit><img src="/assets/icons/Edit.svg" class="btnEditar" id=${id}></button>
@@ -37,10 +39,15 @@ const agregarAlbum = (url,tittle,year,id) => {
     const idEditado = btnEdit.id;
     btnEdit.addEventListener('click',()=>{
         console.log(idEditado)
-        const newURL = prompt("Ingrese el nuevo URL de la imagen");
-        const newTittle = prompt("Ingrese el nuevo titulo del album");
-        const newYear = prompt("Ingrese el nuevo año del album");
-        servicios.editarAlbum(newURL,newTittle,newYear,idEditado);
+        var newURL = prompt("Ingrese el nuevo URL de la imagen");
+        var newTittle = prompt("Ingrese el nuevo titulo del album");
+        var newAuthor = prompt("Ingrese el nuevo autor");
+        var newYear = prompt("Ingrese el nuevo año del album");
+        if(!newURL){newURL = url;};
+        if(!newTittle){newTittle = tittle;}
+        if(!newYear){newYear =year};
+        if(!newAuthor){newAuthor = author}
+        servicios.editarAlbum(newURL,newTittle,newAuthor,newYear,idEditado);
         }
     )
     return div;
@@ -49,8 +56,8 @@ const agregarAlbum = (url,tittle,year,id) => {
 const divPadre = document.querySelector("[data-containter]"); 
 
 servicios.listaProductos().then((products) => {
-    products.forEach(({url,tittle,year,id}) => {
-        const nuevoDiv = agregarAlbum(url,tittle,year,id);
+    products.forEach(({url,tittle,author,year,id}) => {
+        const nuevoDiv = agregarAlbum(url,tittle,author,year,id);
         divPadre.appendChild(nuevoDiv);
     })
 })
@@ -58,11 +65,22 @@ servicios.listaProductos().then((products) => {
 //Control pop up
 
 const btnPopup = document.querySelector("[data-btnToggler]");
+const btnX = document.querySelector("[data-btnToggler2]");
 
 btnPopup.addEventListener("click", () => {
     const formPopUp=formulario.classList;
     const cuerpo = (document.querySelector("[data-body]")).classList;
     formPopUp.toggle("noVisible");
     cuerpo.toggle("blured");
+    btnX.classList.toggle("invisible")
+    btnPopup.classList.toggle("invisible");
 
+});
+btnX.addEventListener("click", () => {
+    const formPopUp=formulario.classList;
+    const cuerpo = (document.querySelector("[data-body]")).classList;
+    formPopUp.toggle("noVisible");
+    cuerpo.toggle("blured");
+    btnX.classList.toggle("invisible")
+    btnPopup.classList.toggle("invisible");
 });

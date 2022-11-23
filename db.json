@@ -10,20 +10,30 @@
     {
       "url": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/paper-skull-cd-cover-music-design-template-89e9976dc6ac7aa6a5e3e2414ad04c3c_screen.jpg?ts=1610076110",
       "tittle": "Paper Skull",
+      "author": "Cdd20",
       "year": "2015",
       "id": "446fcef6-e5b9-44b6-b216-fbe46b56f587"
     },
     {
       "url": "https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1616963902/content-items/007/502/477/Poster-Mujeres-Bh-original.jpg?1616963902",
       "tittle": "Four Seasons",
+      "author": "Multiples",
       "year": "2020",
       "id": "2c94e55a-0e91-47aa-b2c4-d7be107b1b81"
     },
     {
-      "url": "https://cms-assets.tutsplus.com/cdn-cgi/image/width=850/uploads/users/1631/posts/35971/image/AlbumBackCover03.jpg",
-      "tittle": "Testing",
-      "year": "2001",
-      "id": "a5219126-5f01-4544-a03f-e84393fa4f6a"
+      "url": "https://http2.mlstatic.com/D_NQ_NP_808938-MLA44508537353_012021-O.jpg",
+      "tittle": "Plastic Beach",
+      "author": "Gorillaz",
+      "year": "2010",
+      "id": "d0cdd442-3d80-41c7-8dc6-1808f9048488"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/%22AM%22_%28Arctic_Monkeys%29.jpg",
+      "tittle": "AM",
+      "author": "Arctic Monkeys",
+      "year": "2013",
+      "id": "95e5930a-b857-4750-a1d8-767aab4c9035"
     }
   ]
 }
