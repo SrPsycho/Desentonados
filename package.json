@@ -1,0 +1,14 @@
+{
+  "name": "pruebas-fetch",
+  "version": "1.0.0",
+  "description": "no se we, pruebas",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nada"
+  ],
+  "author": "io",
+  "license": "ISC"
+}
