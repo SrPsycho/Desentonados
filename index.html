@@ -12,62 +12,64 @@
 </head>
 <body>
     <header>
-        Logo
-        <div class="buscador">
-            Buscador
+        <img src="/assets/images/logo.png" class="logo">
+        <div class="buscadorPadre">
+            <input type="text" class="buscador" placeholder="..." data-buscador>
+            <button class="lupaBtn"><img src="/assets/icons/search.svg" class="lupa"></button>
         </div>
         <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
     </header>
     <main>
-        <section class="inicio">
-            <h1 class="tituloPrincipal">DESENTONADOS</h1>
-            <h3 class="subTitulo">Music Store</h3>
-        </section>
 
         <div class="oferta">
-            <h2>Verano Musical!</h2>
-            <p>Aprovecha las ofertas actuales, hasta 25% de descuento y envíos gratis!</p>
+            <h2 class="subTitulo segundo">Verano Musical!</h2>
+            <p class="info">Aprovecha las ofertas actuales, hasta 25% de descuento y envíos gratis!</p>
             <a href="#descuentos"><button class="btnOfertas">Ver Descuentos</button></a>
         </div>
 
         <section class="albumes">
-            <a href="/pages/todo.html"><button class="btn_verTodo">Ver todos</button></a>
-            <div class="masVendidos">
-                <h2 class="subTitulo">Lo mas vendido:</h2>
-               
+            <div class="btnAlbumes">
+                <a href="/pages/todos.html"><button class="btn_verTodo">Ver todos</button></a>
             </div>
-            <div class="loNuevo">
-                <h2 class="subTitulo">Nuevos ingresos:</h2>
 
+            <h2 class="subTitulo">Lo mas vendido:</h2>
+            <div class="masVendidos" data-masVendido>
             </div>
-            <div class="descuentos" id="descuentos">
-                <h2 class="subTitulo">Descuentos increíbles:</h2>
+
+            <h2 class="subTitulo">Nuevos ingresos:</h2>
+            <div class="loNuevo" data-loNuevo>
+            </div>
+            <h2 class="subTitulo">Descuentos increíbles:</h2>
+            <div class="descuentos" id="descuentos" data-descuento>
+                
 
             </div>
         </section>
     </main>
+
     <footer>
-        <div class="logoFinal"></div>
+         <img src="/assets/images/logo.png" class="logoFinal">
+
         <div class="FAQ">
             <ul>
-                <li><a href="/pages/nosotros.html">Quienes somos</a></li>
-                <li><a href="#">Políticas de privacidad</a></li>
-                <li><a href="/pages/tiendas.html">Nuestras tiendas</a></li>
-                <li><a href="#">Alguien lee todo esto?</a></li>
+                <li><a href="/pages/nosotros.html" class="linkFooter">Quienes somos</a></li>
+                <li><a href="#" class="linkFooter">Políticas de privacidad</a></li>
+                <li><a href="/pages/tiendas.html" class="linkFooter">Nuestras tiendas</a></li>
+                <li><a href="#" class="linkFooter">Alguien lee todo esto?</a></li>
             </ul>
         </div>
         <form class="mensaje" data-formMsj>
             <h3 class="tituloFooter">Contáctenos!</h3>
-            <label for="name">Nombre:</label>
-            <input type="text" placeholder="Nombre" class="nombreFooter" name="name" required>
-            <label for="msj">Mensaje</label>
-            <textarea name="msj" id="msjFooter" cols="30" rows="10" placeholder="Ingrese su mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+        
+            <input type="text" placeholder="Nombre" class="nombreFooter" name="name" required maxlength="40">
+            <textarea name="msj" class="msjFooter" cols="30" rows="10" placeholder="Ingrese su mensaje" required maxlength="120"></textarea>
+            <button type="submit" class="btnEnviar">Enviar</button>
         </form>
     </footer>
     <div class="creditos">
         <h3>Desarrollado por Matias Hausen</h3>
-        <p>&copy; - 2022</p>
+        <p>&copy;2022</p>
     </div>
+    <script type="module" src="/controllers/principal_controller.js"></script>
 </body>
 </html>

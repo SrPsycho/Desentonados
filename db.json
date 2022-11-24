@@ -12,13 +12,15 @@
       "tittle": "Paper Skull",
       "author": "Cdd20",
       "year": "2015",
+      "nuevo": true,
       "id": "446fcef6-e5b9-44b6-b216-fbe46b56f587"
     },
     {
       "url": "https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1616963902/content-items/007/502/477/Poster-Mujeres-Bh-original.jpg?1616963902",
       "tittle": "Four Seasons",
       "author": "Multiples",
-      "year": "2020",
+      "year": "2022",
+      "nuevo": true,
       "id": "2c94e55a-0e91-47aa-b2c4-d7be107b1b81"
     },
     {
@@ -26,6 +28,7 @@
       "tittle": "Plastic Beach",
       "author": "Gorillaz",
       "year": "2010",
+      "masVendido":1,
       "id": "d0cdd442-3d80-41c7-8dc6-1808f9048488"
     },
     {
@@ -33,6 +36,7 @@
       "tittle": "AM",
       "author": "Arctic Monkeys",
       "year": "2013",
+      "masVendido":1,
       "id": "95e5930a-b857-4750-a1d8-767aab4c9035"
     },
     {
@@ -47,6 +51,7 @@
       "tittle": "Demon Days",
       "author": "Gorillaz",
       "year": "2005",
+      "masVendido":1,
       "id": "4820c54a-7bf1-4787-8497-d566d15f5b58"
     },
     {
@@ -61,6 +66,7 @@
       "tittle": "Humanz",
       "author": "Gorillaz",
       "year": "2017",
+      "nuevo": true,
       "id": "9c5afde5-8fd9-4dc1-b12a-f87a539180a3"
     },
     {
@@ -68,6 +74,7 @@
       "tittle": "Map of the soul",
       "author": "BTS",
       "year": "2020",
+      "masVendido":1,
       "id": "701168c9-10c0-4ef1-806f-3fd6aa36adab"
     },
     {
@@ -75,6 +82,7 @@
       "tittle": "Blurryface",
       "author": "Twenty One Pilots",
       "year": "2015",
+      "masVendido":1,
       "id": "cea7b8c3-b7d8-4ba6-aec0-09c999999898"
     },
     {
@@ -82,6 +90,7 @@
       "tittle": "Get Rich or Die Tryin",
       "author": "50 Cents",
       "year": "2003",
+      "descuento": true,
       "id": "523dc30c-eac0-47fc-bc16-0abd93e7a189"
     },
     {
@@ -89,6 +98,7 @@
       "tittle": "Brothers in Arms",
       "author": "Dire Straits",
       "year": "1985",
+      "descuento": true,
       "id": "7aa92040-ad9d-4e79-b43e-80e5b91e0394"
     },
     {

@@ -23,9 +23,18 @@ const editarAlbum = (url,tittle,author,year,id) => {
     .catch(err => console.log(err));
 };
 
+const mostrarAlbumes = (url,tittle,author,year,id) => {
+  return fetch('http://localhost:3000/cards',{
+    method: 'GET',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({url,tittle,author,year,id})
+})
+}
+
 export const servicios ={
     listaProductos,
     baseDeDatos,
     eliminarAlbum,
-    editarAlbum
+    editarAlbum,
+    mostrarAlbumes
 }

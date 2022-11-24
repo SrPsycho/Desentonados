@@ -115,7 +115,7 @@ h2{
     transform: scale(1.1);
     transition-duration: 400ms;
     border-color: aqua;
-    box-shadow: 5px 5px;
+    box-shadow: 5px 5px 5px;
 }
 .img_album{
     background-color: aqua;
