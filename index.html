@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;700&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Desentonados - Music Store</title>
+</head>
+<body>
+    <header>
+        Logo
+        <div class="buscador">
+            Buscador
+        </div>
+        <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
+    </header>
+    <main>
+        <section class="inicio">
+            <h1 class="tituloPrincipal">DESENTONADOS</h1>
+            <h3 class="subTitulo">Music Store</h3>
+        </section>
+
+        <div class="oferta">
+            <h2>Verano Musical!</h2>
+            <p>Aprovecha las ofertas actuales, hasta 25% de descuento y envíos gratis!</p>
+            <a href="#descuentos"><button class="btnOfertas">Ver Descuentos</button></a>
+        </div>
+
+        <section class="albumes">
+            <a href="/pages/todo.html"><button class="btn_verTodo">Ver todos</button></a>
+            <div class="masVendidos">
+                <h2 class="subTitulo">Lo mas vendido:</h2>
+               
+            </div>
+            <div class="loNuevo">
+                <h2 class="subTitulo">Nuevos ingresos:</h2>
+
+            </div>
+            <div class="descuentos" id="descuentos">
+                <h2 class="subTitulo">Descuentos increíbles:</h2>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="logoFinal"></div>
+        <div class="FAQ">
+            <ul>
+                <li><a href="/pages/nosotros.html">Quienes somos</a></li>
+                <li><a href="#">Políticas de privacidad</a></li>
+                <li><a href="/pages/tiendas.html">Nuestras tiendas</a></li>
+                <li><a href="#">Alguien lee todo esto?</a></li>
+            </ul>
+        </div>
+        <form class="mensaje" data-formMsj>
+            <h3 class="tituloFooter">Contáctenos!</h3>
+            <label for="name">Nombre:</label>
+            <input type="text" placeholder="Nombre" class="nombreFooter" name="name" required>
+            <label for="msj">Mensaje</label>
+            <textarea name="msj" id="msjFooter" cols="30" rows="10" placeholder="Ingrese su mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </footer>
+    <div class="creditos">
+        <h3>Desarrollado por Matias Hausen</h3>
+        <p>&copy; - 2022</p>
+    </div>
+</body>
+</html>

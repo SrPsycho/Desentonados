@@ -1,0 +1,15 @@
+:root{
+    -blanco: #fffefe;
+    -gris: #37373b;
+    -celeste: #96d0ef;
+    -azul: #403ecc;
+    -negro: #151515;
+    -azulZafiro: #086788;
+
+    -cuerpo: 'Barlow', sans-serif;
+    -titulo: 'Rubik Glitch', cursive;
+}
+
+body{
+    scroll-behavior: smooth;
+}

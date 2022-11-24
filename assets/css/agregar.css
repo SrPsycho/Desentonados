@@ -91,14 +91,23 @@ h2{
 
 #padre{
     display: flex;
+    justify-content: center;
+    align-items: center;;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 0 50px 0 50px;
+    margin: 0 0px 0 5px;
 }
 .hijo{
+    max-width: 200px;
+    height: 320px;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
     flex-direction: column;
     border: 2px solid blue;
+    background-color: rgb(233, 233, 233);
     text-align: center;
 }
 .hijo:hover{
@@ -112,10 +121,12 @@ h2{
     background-color: aqua;
     width: 200px;
     height: 200px;
+    border-radius: 15px;
 }
 .titulo_album{
     font-family: monospace;
     font-size: 1.1rem;
+    margin-top: 15px;
 }
 .autor_album{
     font-size: 1rem;

@@ -21,7 +21,7 @@ const editarAlbum = (url,tittle,author,year,id) => {
     })
     .then(respuesta => console.log(respuesta))
     .catch(err => console.log(err));
-  };
+};
 
 export const servicios ={
     listaProductos,
