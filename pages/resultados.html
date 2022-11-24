@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/busqueda.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <title>Resultados</title>
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img src="/assets/images/logo.png" class="logo"></a>
+        <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
+    </header>
+
+    <section class="busquedas">
+        <div class="buscadorPadre">
+            <input type="text" class="buscador_masGrande" placeholder="Titulo, Autor, Año" data-buscador>
+            <button class="lupaBtn" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa_buscador"></button>
+        </div>
+        <p class="advertencia"> <e> Por Favor: usar letras capitales en nombres de autores, ej: </e><strong>Arctic Monkeys</strong> </p>
+        <p class="advertencia"> <e>Y mayúsculas en nombres de Albums, ej:</e> <strong>GORILLAZ</strong> </p>
+    </section>
+   
+    <h2 class="resultadoTitulo ocultador" id="tituloBusqueda">Resultados de su busqueda:</h2>
+    <div class="resultadoBusqueda" data-result>
+
+    </div>
+
+    
+    <script type="module" src="/controllers/busqueda_controller.js"></script>
+</body>
+</html>

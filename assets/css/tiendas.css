@@ -1,0 +1,18 @@
+.tiendas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloTiendas{
+    font-size: 3rem;
+    margin: 50px 0px 50px 0px;
+}
+.xd{
+    font-size: 10rem;
+}
+.xd2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

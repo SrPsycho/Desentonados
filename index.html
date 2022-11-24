@@ -12,10 +12,9 @@
 </head>
 <body>
     <header>
-        <img src="/assets/images/logo.png" class="logo">
+        <a href="#"><img src="/assets/images/logo.png" class="logo"></a>
         <div class="buscadorPadre">
-            <input type="text" class="buscador" placeholder="..." data-buscador>
-            <button class="lupaBtn"><img src="/assets/icons/search.svg" class="lupa"></button>
+            <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
         <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
     </header>
@@ -55,7 +54,7 @@
                 <li><a href="/pages/nosotros.html" class="linkFooter">Quienes somos</a></li>
                 <li><a href="#" class="linkFooter">Políticas de privacidad</a></li>
                 <li><a href="/pages/tiendas.html" class="linkFooter">Nuestras tiendas</a></li>
-                <li><a href="#" class="linkFooter">Alguien lee todo esto?</a></li>
+                <li><a href="/pages/resp.html" class="linkFooter">Alguien lee todo esto?</a></li>
             </ul>
         </div>
         <form class="mensaje" data-formMsj>
@@ -71,5 +70,6 @@
         <p>&copy;2022</p>
     </div>
     <script type="module" src="/controllers/principal_controller.js"></script>
+    <script type="module" src="/controllers/busqueda_controller.js"></script>
 </body>
 </html>

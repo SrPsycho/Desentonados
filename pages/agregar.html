@@ -3,10 +3,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/agregar.css">
+    <link rel="stylesheet" href="/assets/css/index.css">
     <title>Agregar album</title>
 </head>
 <body>
+    <header>
+        <a href="/index.html"><img src="/assets/images/logo.png" class="logo"></a>
+        <div class="buscadorPadre">
+            <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
+        </div>
+        <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
+    </header>
     <button data-btnToggler class="btnToggler">Agregar un nuevo album</button>
 
     <div class="pop-up" data-popper>
@@ -25,10 +34,31 @@
         <div  id="padre" data-containter>
             <!-- Aca vab los nodos -->
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script type="module" src="/controllers/agregar_controller.js""></script>
     </section>
+    <footer>
+        <img src="/assets/images/logo.png" class="logoFinal">
 
- 
+       <div class="FAQ">
+           <ul>
+               <li><a href="/pages/nosotros.html" class="linkFooter">Quienes somos</a></li>
+               <li><a href="#" class="linkFooter">Políticas de privacidad</a></li>
+               <li><a href="/pages/tiendas.html" class="linkFooter">Nuestras tiendas</a></li>
+               <li><a href="#" class="linkFooter">Alguien lee todo esto?</a></li>
+           </ul>
+       </div>
+       <form class="mensaje" data-formMsj>
+           <h3 class="tituloFooter">Contáctenos!</h3>
+       
+           <input type="text" placeholder="Nombre" class="nombreFooter" name="name" required maxlength="40">
+           <textarea name="msj" class="msjFooter" cols="30" rows="10" placeholder="Ingrese su mensaje" required maxlength="120"></textarea>
+           <button type="submit" class="btnEnviar">Enviar</button>
+       </form>
+   </footer>
+   <div class="creditos">
+       <h3>Desarrollado por Matias Hausen</h3>
+       <p>&copy;2022</p>
+   </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="module" src="/controllers/agregar_controller.js""></script>
 </body>
 </html>

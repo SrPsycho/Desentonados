@@ -4,7 +4,7 @@ const baseDeDatos = (url,tittle,author,year) => {
     return fetch('http://localhost:3000/cards',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({url,tittle,author,year,id: uuid.v4()})
+        body: JSON.stringify({url,tittle,author,year,nuevo:true,id: uuid.v4()})
     })
 }
 const eliminarAlbum = (id) => {

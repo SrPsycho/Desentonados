@@ -56,13 +56,15 @@ header{
     width: 40px;
     border: none;
 }
-.lupaBtn{
+.lupaBtnPrincipal{
+    cursor: pointer;
     border: none;
     height: 50px;
-    border-radius: 0px 25px 25px 0px;
+    width: 250px;
+    border-radius: 25px 25px 25px 25px;
     background-color: #37373b;
-
 }
+
 button:hover{
     transform: scale(1.1);
     transition-duration: 400ms;

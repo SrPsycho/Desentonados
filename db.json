@@ -8,27 +8,11 @@
   ],
   "cards": [
     {
-      "url": "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/paper-skull-cd-cover-music-design-template-89e9976dc6ac7aa6a5e3e2414ad04c3c_screen.jpg?ts=1610076110",
-      "tittle": "Paper Skull",
-      "author": "Cdd20",
-      "year": "2015",
-      "nuevo": true,
-      "id": "446fcef6-e5b9-44b6-b216-fbe46b56f587"
-    },
-    {
-      "url": "https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1616963902/content-items/007/502/477/Poster-Mujeres-Bh-original.jpg?1616963902",
-      "tittle": "Four Seasons",
-      "author": "Multiples",
-      "year": "2022",
-      "nuevo": true,
-      "id": "2c94e55a-0e91-47aa-b2c4-d7be107b1b81"
-    },
-    {
       "url": "https://http2.mlstatic.com/D_NQ_NP_808938-MLA44508537353_012021-O.jpg",
-      "tittle": "Plastic Beach",
+      "tittle": "PLASTIC BEACH",
       "author": "Gorillaz",
       "year": "2010",
-      "masVendido":1,
+      "masVendido": 1,
       "id": "d0cdd442-3d80-41c7-8dc6-1808f9048488"
     },
     {
@@ -36,34 +20,34 @@
       "tittle": "AM",
       "author": "Arctic Monkeys",
       "year": "2013",
-      "masVendido":1,
+      "masVendido": 1,
       "id": "95e5930a-b857-4750-a1d8-767aab4c9035"
     },
     {
       "url": "https://musiclife.cl/2319-superlarge_default/arctic-monkeys-favourite-worst-nightmare.jpg",
-      "tittle": "Favourite Worst Nightmare",
+      "tittle": "FAVOURITE WORST NIGHTMARE",
       "author": "Arctic Monkeys",
+      "descuento": "on",
       "year": "2007",
       "id": "b28acb03-9c41-46cc-bff4-f1917199107e"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/en/d/df/Gorillaz_Demon_Days.PNG",
-      "tittle": "Demon Days",
+      "tittle": "DEMONS DAYS",
       "author": "Gorillaz",
       "year": "2005",
-      "masVendido":1,
       "id": "4820c54a-7bf1-4787-8497-d566d15f5b58"
     },
     {
       "url": "https://m.media-amazon.com/images/I/71m0yDpEowL._SL1300_.jpg",
-      "tittle": "Gorillaz",
+      "tittle": "GORILLAZ",
       "author": "Gorillaz",
       "year": "2001",
       "id": "12268d64-15b3-46e6-af00-4128d63a925f"
     },
     {
       "url": "https://i0.wp.com/www.ultrasonica.info/wp-content/uploads/2017/07/GORILLAZ-Humanz.jpg",
-      "tittle": "Humanz",
+      "tittle": "HUMANZ",
       "author": "Gorillaz",
       "year": "2017",
       "nuevo": true,
@@ -71,23 +55,23 @@
     },
     {
       "url": "https://m.media-amazon.com/images/I/31h1-gBeu8L.jpg",
-      "tittle": "Map of the soul",
+      "tittle": "MAP OF THE SOUL",
       "author": "BTS",
       "year": "2020",
-      "masVendido":1,
+      "masVendido": 1,
       "id": "701168c9-10c0-4ef1-806f-3fd6aa36adab"
     },
     {
       "url": "https://www.lahiguera.net/musicalia/artistas/twenty_one_pilots/disco/6898/twenty_one_pilots_blurryface-portada.jpg",
-      "tittle": "Blurryface",
+      "tittle": "BLURRYFACE",
       "author": "Twenty One Pilots",
       "year": "2015",
-      "masVendido":1,
+      "masVendido": 1,
       "id": "cea7b8c3-b7d8-4ba6-aec0-09c999999898"
     },
     {
       "url": "https://upload.wikimedia.org/wikipedia/en/9/9d/Get_Rich_Or_Die_Tryin%27.JPG",
-      "tittle": "Get Rich or Die Tryin",
+      "tittle": "GET RICH OR DIE TRYING",
       "author": "50 Cents",
       "year": "2003",
       "descuento": true,
@@ -95,7 +79,7 @@
     },
     {
       "url": "https://m.media-amazon.com/images/I/91F08-MPdVL._SL1500_.jpg",
-      "tittle": "Brothers in Arms",
+      "tittle": "BROTHERS IN ARMS",
       "author": "Dire Straits",
       "year": "1985",
       "descuento": true,
@@ -103,17 +87,42 @@
     },
     {
       "url": "https://spreadingthesoundblog.files.wordpress.com/2016/07/thegetaway_cover-final-1024x1024.jpg?w=748",
-      "tittle": "The Getaway",
+      "tittle": "THE GETAWAY",
       "author": "Red Hot Chilli Peppers",
+      "descuento": "on",
       "year": "2016",
       "id": "56010475-1aae-492e-865c-db9b98091bf0"
     },
     {
       "url": "https://i.discogs.com/Uwo-VeRWbaaM3-pdEYQNwnJo5ThCfS29cQgqc5CnkLQ/rs:fit/g:sm/q:90/h:500/w:500/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE4MjE0/MTE3LTE2MTc5Mjc2/MjItMTcyOC5qcGVn.jpeg",
-      "tittle": "Obras Cumbres",
+      "tittle": "OBRAS CUMBRES",
       "author": "Soda Stereo",
       "year": "2006",
       "id": "80fb5f9f-3564-4e93-b073-ca8bba80433d"
+    },
+    {
+      "url": "https://http2.mlstatic.com/D_NQ_NP_818013-MLA29054991406_122018-O.jpg",
+      "tittle": "INFLUENCIA",
+      "author": "Charly Garcia",
+      "year": "1996",
+      "nuevo": true,
+      "id": "c946139d-ad27-4072-acdd-a3ce54d247ff"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/en/1/10/AlbumContrareloj.jpg",
+      "tittle": "CONTRARELOJ",
+      "author": "Los Enanitos Verdes",
+      "year": "1986",
+      "nuevo": true,
+      "id": "e9ef0fa5-4ee3-4e67-8d68-fe922cdabb83"
+    },
+    {
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Doble_vida_cover_sodastereo.jpg",
+      "tittle": "DOBLE VIDA",
+      "author": "Soda Stereo",
+      "year": "1988",
+      "nuevo": true,
+      "id": "ba2b4980-b1c9-4613-a522-8a929d22b9b6"
     }
   ]
 }

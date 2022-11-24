@@ -8,7 +8,6 @@ formulario.addEventListener("submit", (evento) => {
     const tittle = document.querySelector("[data-tittle]").value;
     const author = document.querySelector("[data-author]").value; 
     const year = document.querySelector("[data-year]").value;
-
     servicios.baseDeDatos(url,tittle,author,year);
 })
 
@@ -56,10 +55,10 @@ const agregarAlbum = (url,tittle,author,year,id) => {
 const divPadre = document.querySelector("[data-containter]"); 
 
 servicios.listaProductos().then((products) => {
-    products.forEach(({url,tittle,author,year,id}) => {
-        const nuevoDiv = agregarAlbum(url,tittle,author,year,id);
-        divPadre.appendChild(nuevoDiv);
-    })
+        products.forEach(({url,tittle,author,year,id}) => {
+            const nuevoDiv = agregarAlbum(url,(tittle).toUpperCase(),author,year,id);
+            divPadre.appendChild(nuevoDiv);
+        })
 })
  
 //Control pop up

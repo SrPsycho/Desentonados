@@ -1,0 +1,24 @@
+.cuerpoNos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tituloNos{
+    font-size: 3rem;
+    margin-top: 55px;
+}
+.descripcionNos{
+    text-align: justify;
+    font-size: 2rem;
+    margin: 55px 15px 55px 10px;
+}
+.contenedorNos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotoNos{
+    width: 550px;
+    margin: 0 5px 55px 5px;
+}
