@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="stylesheet" href="/assets/css/login.css">
-    <title>Login</title>
+    <link rel="stylesheet" href="/assets/css/obj.css">
+    <title>Producto</title>
 </head>
 <body>
     <header>
@@ -14,18 +14,12 @@
         <div class="buscadorPadre">
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
+        <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
     </header>
     <main>
-        <h2 class="titulo_ingreso">Iniciar Sesion</h2>
-        <form data-logForm>
-            <div class="forms">
-                <input type="email" placeholder="Escriba su correo electronico" class="input_ingreso" id="correo_ingreso">
-                <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" id="contraseña_login">
-                <button type="submit" class="btn_ingreso" id="btn_ingreso">Ingresar</button>
-            </div>
-        </form>
-        <a href="/pages/registro.html"><input type="button" value="Registrarte" class="btn_registro"></a>
-        
+        <div class="contenedorMayor" data-mayorContenedor>
+     
+        </div>
     </main>
     <footer>
         <img src="/assets/images/logo.png" class="logoFinal">
@@ -35,7 +29,7 @@
                <li><a href="/pages/nosotros.html" class="linkFooter">Quienes somos</a></li>
                <li><a href="#" class="linkFooter">Políticas de privacidad</a></li>
                <li><a href="/pages/tiendas.html" class="linkFooter">Nuestras tiendas</a></li>
-               <li><a href="/pages/resp.html" class="linkFooter">Alguien lee todo esto?</a></li>
+               <li><a href="#" class="linkFooter">Alguien lee todo esto?</a></li>
            </ul>
        </div>
        <form class="mensaje" data-formMsj>
@@ -50,5 +44,6 @@
        <h3>Desarrollado por Matias Hausen</h3>
        <p>&copy;2022</p>
    </div>
+    <script type="module" src="/controllers/desc_controller.js"></script>
 </body>
 </html>

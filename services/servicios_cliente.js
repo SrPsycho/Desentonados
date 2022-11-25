@@ -31,10 +31,15 @@ const mostrarAlbumes = (url,tittle,author,year,id) => {
 })
 }
 
+const detalleAlbum = (id) => {
+  return fetch(`http://localhost:3000/cards/${id}`)
+.then(respuesta => respuesta.json())}
+
 export const servicios ={
     listaProductos,
     baseDeDatos,
     eliminarAlbum,
     editarAlbum,
-    mostrarAlbumes
+    mostrarAlbumes,
+    detalleAlbum
 }

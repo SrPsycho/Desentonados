@@ -15,16 +15,21 @@
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
     </header>
-    <main>
-        <h2 class="titulo_ingreso">Iniciar Sesion</h2>
-        <form data-logForm>
+    
+        <h2 class="titulo_ingreso">Registrarse</h2>
+        <form data-form>
             <div class="forms">
-                <input type="email" placeholder="Escriba su correo electronico" class="input_ingreso" id="correo_ingreso">
-                <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" id="contraseña_login">
-                <button type="submit" class="btn_ingreso" id="btn_ingreso">Ingresar</button>
+                <input type="text" placeholder="Escriba su nombre completo" class="input_ingreso" required id="name_register">
+                <input type="email" placeholder="Escriba su correo electronico" class="input_ingreso" required id="email_register">
+    
+                <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" required id="pass_register">
+                <input type="password" placeholder="Repita su contraseña" class="input_ingreso" required id="pass_again">
             </div>
+            <div>
+                <input type="checkbox" name="condiciones" id="cond1" required>Acepta los <a href="https://www.youtube.com/watch?v=KnHmoA6Op1o" target="_blank" class="link_terminos">Terminos y condiciones</a>?
+            </div>
+            <button type="submit" class="btn_registro" id="btn_registro">Registrarte</button>
         </form>
-        <a href="/pages/registro.html"><input type="button" value="Registrarte" class="btn_registro"></a>
         
     </main>
     <footer>
