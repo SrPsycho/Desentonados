@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/index.css">
-    <link rel="stylesheet" href="/assets/css/login.css">
+    <link rel="stylesheet" href="/assets/css/perfil.css">
     <title>Login</title>
 </head>
 <body>
@@ -15,18 +15,8 @@
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
     </header>
-    <main>
-        <h2 class="titulo_ingreso">Iniciar Sesion</h2>
-        
-            <div class="forms">
-                <input type="email" placeholder="Escriba su correo electronico" class="input_ingreso" id="correo_ingreso" data-emailLog>
-                <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" id="contraseña_login" data-passLog>
-                <button type="button" class="btn_ingreso" id="btn_ingreso" data-logForm>Ingresar</button>
-            </div>
-     
-        <a href="/pages/registro.html"><input type="button" value="Registrarte" class="btn_registro"></a>
-        
-    </main>
+
+
     <footer>
         <img src="/assets/images/logo.png" class="logoFinal">
 
@@ -52,5 +42,6 @@
    </div>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script type="module" src="/controllers/login_controller.js"></script>
+   <script type="module" src="/controllers/perfil_controller.js"></script>
 </body>
 </html>

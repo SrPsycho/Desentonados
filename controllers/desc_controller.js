@@ -9,14 +9,14 @@ const obtenerInfo = async() => {
     var tituloObj = document.querySelector("[data-tittleObj]");
     var autorObj = document.querySelector("[data-autorObj]");
     var yearObj = document.querySelector("[data-yearObj]");
-    //Asignando los datos
+
     await servicios.detalleAlbum(idObj).then((perfil) => {
         imagenObj = perfil.url;
         tituloObj= perfil.tittle;
         autorObj= perfil.author;
         yearObj = perfil.year;
     });
-    //Obteniendo el div
+
     const contenedor = document.querySelector('[data-mayorContenedor]');
     const organizador = document.createElement('div');
     const interno = `
@@ -29,12 +29,19 @@ const obtenerInfo = async() => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam rem consequatur officiis esse natus, ducimus quas. Amet sunt ipsa ad, distinctio dignissimos corporis? Totam distinctio labore accusantium magni ullam aut?
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut facilis nisi aliquid aliquam repudiandae temporibus possimus. Incidunt explicabo et cupiditate aut nulla laudantium sequi fugiat quaerat rem. Quos, ut. 
             </p>
-            <button class="btnObj" data-btnObj>Reservar</button>
+            <button class="btnObj" id="btnObj" data-btnObj>Reservar</button>
     </div>`
     organizador.innerHTML = interno;
-    contenedor.appendChild(organizador)
+    contenedor.appendChild(organizador);
+
+    const btnObj = document.querySelector("[data-btnObj]");
+    btnObj.addEventListener('click', () =>{
+        alert("producto fuera de stock");
+    })
 }
 
-obtenerInfo()
+obtenerInfo();
 
-const btnObj = document.querySelector("[data-btnObj]")
+
+
+

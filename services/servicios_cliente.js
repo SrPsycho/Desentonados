@@ -35,11 +35,22 @@ const detalleAlbum = (id) => {
   return fetch(`http://localhost:3000/cards/${id}`)
 .then(respuesta => respuesta.json())}
 
+const crearUsuario = (nombre,email,pass) => {
+  return fetch(`http://localhost:3000/perfil`,{
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({nombre,email,pass,id: uuid.v4()})
+  })
+}
+const listaUsuarios = () => fetch('http://localhost:3000/perfil').then(respuesta => respuesta.json());
+
 export const servicios ={
     listaProductos,
     baseDeDatos,
     eliminarAlbum,
     editarAlbum,
     mostrarAlbumes,
-    detalleAlbum
+    detalleAlbum,
+    crearUsuario,
+    listaUsuarios
 }

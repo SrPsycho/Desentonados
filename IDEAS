@@ -2,3 +2,4 @@
 
 //Hay que crear una variable booleana que se guarde en el LocalStorage, y si es verdadera, que no se muestre el btn de login 
 
+//En la parte de Todos podemos filtrar organizando por Año released 

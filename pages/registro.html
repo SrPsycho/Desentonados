@@ -15,21 +15,23 @@
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
     </header>
-    
         <h2 class="titulo_ingreso">Registrarse</h2>
-        <form data-form>
+     
             <div class="forms">
-                <input type="text" placeholder="Escriba su nombre completo" class="input_ingreso" required id="name_register">
-                <input type="email" placeholder="Escriba su correo electronico" class="input_ingreso" required id="email_register">
+                <input type="text" placeholder="Escriba su nombre completo" class="input_ingreso" required id="name_register" maxlength="30" minlength="3" data-nameReg>
+                <input type="email" placeholder="Escriba su correo electronico" class="input_ingreso" required id="email_register" data-emailReg>
     
-                <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" required id="pass_register">
-                <input type="password" placeholder="Repita su contraseña" class="input_ingreso" required id="pass_again">
+                <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" required id="pass_register" minlength="8" maxlength="16" data-passReg>
+                <input type="password" placeholder="Repita su contraseña" class="input_ingreso" required id="pass_again" minlength="8" maxlength="16" data-passReg2>
             </div>
             <div>
                 <input type="checkbox" name="condiciones" id="cond1" required>Acepta los <a href="https://www.youtube.com/watch?v=KnHmoA6Op1o" target="_blank" class="link_terminos">Terminos y condiciones</a>?
             </div>
-            <button type="submit" class="btn_registro" id="btn_registro">Registrarte</button>
-        </form>
+            
+            <button type="button" class="btn_registro" id="btn_registro" data-form>Registrarte</button>
+    
+
+        <a href="/pages/logearse.html"><button class="btn_volver">Login</button></a>
         
     </main>
     <footer>
@@ -55,5 +57,7 @@
        <h3>Desarrollado por Matias Hausen</h3>
        <p>&copy;2022</p>
    </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.2.0/uuid.min.js" integrity="sha512-X0CJvcClD8EXFn5Oq8BD5lIsznKDfxb0Sf9Wr8MCCTyAEWaAAxr0Jvm3qyofsmN7eSHMZ0PPQGjVKroLAfexrA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script type="module" src="/controllers/registro_controller.js"></script>
 </body>
 </html>
