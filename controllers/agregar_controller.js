@@ -23,8 +23,8 @@ const agregarAlbum = (url,tittle,author,year,price,id) => {
         <h4 class="anio_album">${year}</h4>
         <h3 class="precio_album">$${price}</h3>
             <div class="botones">
-                <button id=${id} data-btnEdit><img src="/assets/icons/Edit.svg" class="btnEditar" id=${id}></button>
-                <button id=${id} data-btnDelete><img src="/assets/icons/Delete.svg" class="btnBorrar" id=${id}></button>
+                <button id=${id} class="btnOpc" data-btnEdit><img src="/assets/icons/Edit.svg" class="btnEditar" id=${id}></button>
+                <button id=${id} class="btnOpc" data-btnDelete><img src="/assets/icons/Delete.svg" class="btnBorrar" id=${id}></button>
             </div>
     </div> </a>`
     div.innerHTML = relleno;

@@ -1,0 +1,22 @@
+.fotoPerfil{
+    width: 250px;
+    height: 250px;
+    background: center no-repeat;
+}
+.contenedorPerfil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 0px 0px 50px 0px;
+}
+.tituloPerfil{
+    font-size: 5rem;
+    color: #fefefe;
+    text-shadow: black 5px 5px 2px;
+}
+.btnPerfil{
+    color: #fefefe;
+    background-color: #e51599;
+}

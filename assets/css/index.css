@@ -279,7 +279,7 @@ footer{
     font-family: 'Barlow', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: #e51599;
+    color: black;;
 }
 a{
     text-decoration:none ;
@@ -287,4 +287,10 @@ a{
 
 .ocultarBtn{
     display: none;
+}
+.sectionContent{
+    margin-bottom: 50px;
+}
+.btnOpc{
+    box-shadow: none !important;;
 }

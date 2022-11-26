@@ -15,10 +15,15 @@
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
     </header>
-    <button data-btnToggler class="btnToggler">Agregar un nuevo album</button>
+    <div class="togglerContenedor">
+        <h2>Álbumes recientes</h2>
+        <button data-btnToggler class="btnToggler">Agregar un nuevo album</button>
 
+    </div>
+    
     <div class="pop-up" data-popper>
-        <button data-btnToggler2 class="btnToggler invisible">X</button>
+     
+        <button data-btnToggler2 class="btnToggler2 invisible">X</button>
         <form data-form id="popUp_album" class="noVisible">
             <h1>Datos del album</h1>
             <input type="text" placeholder="Titulo" data-tittle>
@@ -29,8 +34,8 @@
             <button type="submit" class="btnSubir">Subir album</button>
         </form>
     </div>
-    <section data-body>
-        <h2>Álbumes recientes</h2>
+    <section data-body class="sectionBody">
+        
         <div  id="padre" data-containter>
             <!-- Aca vab los nodos -->
         </div>

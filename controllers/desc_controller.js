@@ -16,22 +16,33 @@ const obtenerInfo = async() => {
         tituloObj= perfil.tittle;
         autorObj= perfil.author;
         yearObj = perfil.year;
+        priceObj = perfil.price;
     });
 
     const contenedor = document.querySelector('[data-mayorContenedor]');
     const organizador = document.createElement('div');
     const interno = `
     <div class="contenedorMenor">
-            <img src="${imagenObj}" class="imgObj" data-imgObj>
-            <h2 class="tituloObj" data-tittleObj>${tituloObj}</h2>
-            <h3 class="autorObj" data-autorObj>${autorObj}</h3>
-            <h4 class="yearObj" data-yearObj>${yearObj}</h4>
+            <div class="contenedorInterno">
+                <img src="${imagenObj}" class="imgObj" data-imgObj>
+                <h2 class="tituloObj" data-tittleObj>${tituloObj}</h2>
+                <h3 class="autorObj" data-autorObj>${autorObj}</h3>
+                <h4 class="yearObj" data-yearObj>${yearObj}</h4>
+            </div>
+            
+        
             <p class="descObj">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam rem consequatur officiis esse natus, ducimus quas. Amet sunt ipsa ad, distinctio dignissimos corporis? Totam distinctio labore accusantium magni ullam aut?
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut facilis nisi aliquid aliquam repudiandae temporibus possimus. Incidunt explicabo et cupiditate aut nulla laudantium sequi fugiat quaerat rem. Quos, ut. 
-            </p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam rem consequatur officiis esse natus, ducimus quas. Amet sunt ipsa ad, distinctio dignissimos corporis? Totam distinctio labore accusantium magni ullam aut?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident ut facilis nisi aliquid aliquam repudiandae temporibus possimus. Incidunt explicabo et cupiditate aut nulla laudantium sequi fugiat quaerat rem. Quos, ut. 
+             </p>
+
+
+            <div className="contenedorReserva">
             <h3 class="precio_album">$${priceObj}</h3>
-            <button class="btnObj" id="btnObj" data-btnObj>Reservar</button>
+            <button class="btnIngreso" id="btnObj" data-btnObj>Reservar</button>
+            </div>
+          
+          
     </div>`
     organizador.innerHTML = interno;
     contenedor.appendChild(organizador);

@@ -7,11 +7,11 @@ servicios.listaUsuarios().then((usuario)=>{
         const nombreUser = nombre;
         console.log(nombreUser);
         const relleno = `
-        <div>
-            <img src="" class="fotoPerfil">
+        <div class="contenedorPerfil">
+            <img src="/assets/images/perfil.png" class="fotoPerfil">
             <h2 class="tituloPerfil">Bienvenido ${nombreUser}</h2>
-            <a href="/pages/agregar.html"><button>Editar inventario</button></a>
-            <a href="/pages/todos.html"><button>Inventario</button></a>
+            <a href="/pages/agregar.html"><button class="btnPerfil">Editar inventario</button></a>
+            <a href="/pages/todos.html"><button class="btnPerfil">Inventario</button></a>
         </div>`
         const contenedor = document.createElement('div');
         contenedor.innerHTML = relleno;
