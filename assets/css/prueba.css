@@ -29,3 +29,6 @@
     font-size: 1.2rem;
     opacity: 75%;
 }
+.ocultarBtn{
+    display: none;
+}

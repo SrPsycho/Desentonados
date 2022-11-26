@@ -9,12 +9,12 @@
     <title>Todos los albums</title>
 </head>
 <body>
-    <header>
+    <header data-header>
         <a href="/index.html"><img src="/assets/images/logo.png" class="logo"></a>
         <div class="buscadorPadre">
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
-        <a href="/pages/logearse.html"><button class="btnIngreso">Ingresar</button></a>
+        <a href="/pages/logearse.html" id="linkBtn"><button class="btnIngreso">Ingresar</button></a>
     </header>
 
     <section data-body>
@@ -47,5 +47,6 @@
        <p>&copy;2022</p>
    </div>
     <script type="module" src="/controllers/todo_controller.js""></script>
+    <script type="module" src="/controllers/ocultador_controller.js"></script>
 </body>
 </html>

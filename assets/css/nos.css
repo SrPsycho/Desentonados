@@ -22,3 +22,6 @@
     width: 550px;
     margin: 0 5px 55px 5px;
 }
+.ocultarBtn{
+    display: none;
+}

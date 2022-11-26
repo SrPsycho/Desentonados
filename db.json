@@ -1,11 +1,6 @@
 {
   "perfil": [
-    {
-      "nombre": "Pedro",
-      "email": "pedrito@gmail.com",
-      "pass": "12345678",
-      "id": "7a6de6c2-8f57-4d9c-b18d-4d2372de250d"
-    }
+
   ],
   "cards": [
     {
@@ -13,6 +8,7 @@
       "tittle": "PLASTIC BEACH",
       "author": "Gorillaz",
       "year": "2010",
+      "price": 60,
       "id": "d0cdd442-3d80-41c7-8dc6-1808f9048488"
     },
     {
@@ -20,6 +16,7 @@
       "tittle": "AM",
       "author": "Arctic Monkeys",
       "year": "2013",
+      "price": 50,
       "masVendido": 1,
       "id": "95e5930a-b857-4750-a1d8-767aab4c9035"
     },
@@ -29,6 +26,7 @@
       "author": "Arctic Monkeys",
       "descuento": "on",
       "year": "2007",
+      "price": 35,
       "id": "b28acb03-9c41-46cc-bff4-f1917199107e"
     },
     {
@@ -36,6 +34,8 @@
       "tittle": "DEMONS DAYS",
       "author": "Gorillaz",
       "year": "2005",
+      "price": 60,
+      "masVendido": 1,
       "id": "4820c54a-7bf1-4787-8497-d566d15f5b58"
     },
     {
@@ -43,6 +43,7 @@
       "tittle": "GORILLAZ",
       "author": "Gorillaz",
       "year": "2001",
+      "price": 25,
       "id": "12268d64-15b3-46e6-af00-4128d63a925f"
     },
     {
@@ -51,6 +52,7 @@
       "author": "Gorillaz",
       "year": "2017",
       "nuevo": true,
+      "price": 75,
       "id": "9c5afde5-8fd9-4dc1-b12a-f87a539180a3"
     },
     {
@@ -59,6 +61,7 @@
       "author": "BTS",
       "year": "2020",
       "masVendido": 1,
+      "price": 85,
       "id": "701168c9-10c0-4ef1-806f-3fd6aa36adab"
     },
     {
@@ -67,6 +70,7 @@
       "author": "Twenty One Pilots",
       "year": "2015",
       "masVendido": 1,
+      "price": 45,
       "id": "cea7b8c3-b7d8-4ba6-aec0-09c999999898"
     },
     {
@@ -75,6 +79,7 @@
       "author": "50 Cents",
       "year": "2003",
       "descuento": true,
+      "price": 15,
       "id": "523dc30c-eac0-47fc-bc16-0abd93e7a189"
     },
     {
@@ -83,6 +88,7 @@
       "author": "Dire Straits",
       "year": "1985",
       "descuento": true,
+      "price": 25,
       "id": "7aa92040-ad9d-4e79-b43e-80e5b91e0394"
     },
     {
@@ -91,6 +97,7 @@
       "author": "Red Hot Chilli Peppers",
       "descuento": "on",
       "year": "2016",
+      "price": 25,
       "id": "56010475-1aae-492e-865c-db9b98091bf0"
     },
     {
@@ -98,6 +105,7 @@
       "tittle": "OBRAS CUMBRES",
       "author": "Soda Stereo",
       "year": "2006",
+      "price": 60,
       "id": "80fb5f9f-3564-4e93-b073-ca8bba80433d"
     },
     {
@@ -106,6 +114,7 @@
       "author": "Charly Garcia",
       "year": "1996",
       "nuevo": true,
+      "price": 35,
       "id": "c946139d-ad27-4072-acdd-a3ce54d247ff"
     },
     {
@@ -114,6 +123,7 @@
       "author": "Los Enanitos Verdes",
       "year": "1986",
       "nuevo": true,
+      "price": 45,
       "id": "e9ef0fa5-4ee3-4e67-8d68-fe922cdabb83"
     },
     {
@@ -122,7 +132,17 @@
       "author": "Soda Stereo",
       "year": "1988",
       "nuevo": true,
+      "price": 35,
       "id": "ba2b4980-b1c9-4613-a522-8a929d22b9b6"
+    },
+    {
+      "url": "https://m.media-amazon.com/images/I/81aTawcGdmL._SL1500_.jpg",
+      "tittle": "The Dark Side of The Moon",
+      "author": "Pink Floyd",
+      "year": "1973",
+      "nuevo": true,
+      "price": "99",
+      "id": "af1a018c-60c4-407f-8921-e241675cee34"
     }
   ]
 }

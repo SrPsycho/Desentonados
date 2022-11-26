@@ -8,10 +8,11 @@ formulario.addEventListener("submit", (evento) => {
     const tittle = document.querySelector("[data-tittle]").value;
     const author = document.querySelector("[data-author]").value; 
     const year = document.querySelector("[data-year]").value;
-    servicios.baseDeDatos(url,tittle,author,year);
+    const price = document.querySelector("[data-price]").value;
+    servicios.baseDeDatos(url,tittle,author,year,price);
 })
 
-const agregarAlbum = (url,tittle,author,year,id) => {
+const agregarAlbum = (url,tittle,author,year,price,id) => {
     const div = document.createElement('div');
     const relleno = `
     <div class="hijo" >
@@ -20,6 +21,7 @@ const agregarAlbum = (url,tittle,author,year,id) => {
         <h3 class="titulo_album">${tittle}</h3>
         <h3 class="autor_album">${author}</h3>
         <h4 class="anio_album">${year}</h4>
+        <h3 class="precio_album">$${price}</h3>
             <div class="botones">
                 <button id=${id} data-btnEdit><img src="/assets/icons/Edit.svg" class="btnEditar" id=${id}></button>
                 <button id=${id} data-btnDelete><img src="/assets/icons/Delete.svg" class="btnBorrar" id=${id}></button>
@@ -43,11 +45,13 @@ const agregarAlbum = (url,tittle,author,year,id) => {
         var newTittle = prompt("Ingrese el nuevo titulo del album");
         var newAuthor = prompt("Ingrese el nuevo autor");
         var newYear = prompt("Ingrese el nuevo año del album");
+        var newPrice = prompt("Ingrese el nuevo precio");
         if(!newURL){newURL = url;};
         if(!newTittle){newTittle = tittle;}
         if(!newYear){newYear =year};
-        if(!newAuthor){newAuthor = author}
-        servicios.editarAlbum(newURL,newTittle,newAuthor,newYear,idEditado);
+        if(!newAuthor){newAuthor = author};
+        if(!newPrice){newPrice = price}
+        servicios.editarAlbum(newURL,newTittle,newAuthor,newYear,newPrice,idEditado);
         }
     )
     return div;
@@ -56,8 +60,8 @@ const agregarAlbum = (url,tittle,author,year,id) => {
 const divPadre = document.querySelector("[data-containter]"); 
 
 servicios.listaProductos().then((products) => {
-        products.forEach(({url,tittle,author,year,id}) => {
-            const nuevoDiv = agregarAlbum(url,(tittle).toUpperCase(),author,year,id);
+        products.forEach(({url,tittle,author,year,price,id}) => {
+            const nuevoDiv = agregarAlbum(url,(tittle).toUpperCase(),author,year,price,id);
             divPadre.appendChild(nuevoDiv);
         })
 })

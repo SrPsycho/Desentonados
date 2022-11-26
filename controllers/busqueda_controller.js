@@ -1,7 +1,7 @@
 import { servicios } from "../services/servicios_cliente.js";
 
 
-const agregarAlbum = (url,tittle,author,year,id) => {
+const agregarAlbum = (url,tittle,author,year,price,id) => {
     const div = document.createElement('div');
     const relleno = `
     <a href="/pages/obj.html?id=${id}">
@@ -10,6 +10,7 @@ const agregarAlbum = (url,tittle,author,year,id) => {
         <h3 class="titulo_album">${tittle}</h3>
         <h3 class="autor_album">${author}</h3>
         <h4 class="anio_album">${year}</h4>
+        <h3 class="precio_album">$${price}</h3>
     </div> </a>`
     div.innerHTML = relleno;
     return div;
@@ -26,9 +27,9 @@ btnLupa.addEventListener("click", () =>{
 
     console.log(busqueda);
     servicios.listaProductos().then((products) => {
-    products.forEach(({url,tittle,author,year,id}) => {
+    products.forEach(({url,tittle,author,year,price,id}) => {
         if(busqueda == tittle || busqueda ==author || busqueda ==year){
-            const nuevoDiv = agregarAlbum(url,tittle,author,year,id);
+            const nuevoDiv = agregarAlbum(url,tittle,author,year,price,id);
             resultadosBusqueda.appendChild(nuevoDiv);
         }
         })

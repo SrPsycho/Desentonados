@@ -1,6 +1,7 @@
 import { servicios } from '../services/servicios_cliente.js'
 
 
+
 const formulario = document.querySelector("[data-form]");
 
 formulario.addEventListener('click',(e)=>{
@@ -14,7 +15,7 @@ formulario.addEventListener('click',(e)=>{
 
     if(passAgain.value === pass.value){
         servicios.crearUsuario(nombre, email, pass.value);
-        alert("Usuario creado con exito, redirigiendo...");
+        alert("Usuario creado con exito");
         window.location.href = "/pages/logearse.html";
         
     }else{

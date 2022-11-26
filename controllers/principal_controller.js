@@ -1,7 +1,7 @@
 import { servicios } from '../services/servicios_cliente.js';
 
 
-const agregarAlbum = (url,tittle,author,year,id) => {
+const agregarAlbum = (url,tittle,author,year,price,id) => {
     const div = document.createElement('div');
     const relleno = `
     <a href="/pages/obj.html?id=${id}">
@@ -10,6 +10,7 @@ const agregarAlbum = (url,tittle,author,year,id) => {
             <h3 class="titulo_album">${tittle}</h3>
             <h3 class="autor_album">${author}</h3>
             <h4 class="anio_album">${year}</h4>
+            <h3 class="precio_album">$${price}</h3>
         </div>
     </a>`
     div.innerHTML = relleno;
@@ -19,9 +20,9 @@ const agregarAlbum = (url,tittle,author,year,id) => {
 const divMasVendido = document.querySelector("[data-masVendido]"); 
 
 servicios.listaProductos().then((products) => {
-    products.forEach(({url,tittle,author,masVendido,year,id}) => {
+    products.forEach(({url,tittle,author,masVendido,year,price,id}) => {
         if(masVendido){
-            const nuevoDiv = agregarAlbum(url,tittle,author,year,id);
+            const nuevoDiv = agregarAlbum(url,tittle,author,year,price,id);
             divMasVendido.appendChild(nuevoDiv);}
         })
     }
@@ -29,9 +30,9 @@ servicios.listaProductos().then((products) => {
 
 const divLoNuevo = document.querySelector("[data-loNuevo]"); 
 servicios.listaProductos().then((products) => {
-    products.forEach(({url,tittle,author,nuevo,year,id}) => {
+    products.forEach(({url,tittle,author,nuevo,year,price,id}) => {
         if(nuevo){
-            const nuevoDiv = agregarAlbum(url,tittle,author,year,id);
+            const nuevoDiv = agregarAlbum(url,tittle,author,year,price,id);
             divLoNuevo.appendChild(nuevoDiv);}
         })
     }
@@ -39,9 +40,9 @@ servicios.listaProductos().then((products) => {
 
 const divDescuento = document.querySelector("[data-descuento]"); 
 servicios.listaProductos().then((products) => {
-    products.forEach(({url,tittle,author,descuento,year,id}) => {
+    products.forEach(({url,tittle,author,descuento,year,price,id}) => {
         if(descuento){
-            const nuevoDiv = agregarAlbum(url,tittle,author,year,id);
+            const nuevoDiv = agregarAlbum(url,tittle,author,year,price,id);
             divDescuento.appendChild(nuevoDiv);}
         })
     }

@@ -57,3 +57,6 @@
 strong{
     color: #e51599;
 }
+.ocultarBtn{
+    display: none;
+}

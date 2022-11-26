@@ -1,7 +1,6 @@
 import { servicios } from '../services/servicios_cliente.js'
 
 
-
 const formulario = document.querySelector('[data-logForm]');
 
 formulario.addEventListener('click',(e)=>{
@@ -15,14 +14,12 @@ formulario.addEventListener('click',(e)=>{
     servicios.listaUsuarios().then((usuario) => {
         usuario.forEach(({email,pass})=> {
             if(emailBuscar===email && passBuscar===pass){
-                alert("funciono") //Si funciona xd
-                window.location.href = "/index.html"
+                window.location.href = "/pages/perfil.html"
 
             }else if(emailBuscar!==email){
                 alert("Email no encontrado");
                 inputEmail.classList.toggle('inputError');
                 inputEmail.value = '';
-                
             }else if(passBuscar!==pass){
                 alert("Contraseña incorrecta");
                 inputPass.classList.toggle('inputError');
@@ -30,5 +27,4 @@ formulario.addEventListener('click',(e)=>{
             }
         });
     })
-      
 })

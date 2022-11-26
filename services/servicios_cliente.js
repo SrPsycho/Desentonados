@@ -1,10 +1,10 @@
 const listaProductos = () => fetch('http://localhost:3000/cards').then(respuesta => respuesta.json());
 
-const baseDeDatos = (url,tittle,author,year) => {
+const baseDeDatos = (url,tittle,author,year,price) => {
     return fetch('http://localhost:3000/cards',{
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({url,tittle,author,year,nuevo:true,id: uuid.v4()})
+        body: JSON.stringify({url,tittle,author,year,nuevo:true,price,id: uuid.v4()})
     })
 }
 const eliminarAlbum = (id) => {
@@ -12,22 +12,22 @@ const eliminarAlbum = (id) => {
       method: 'DELETE'
     })
 }
-const editarAlbum = (url,tittle,author,year,id) => {
+const editarAlbum = (url,tittle,author,year,price,id) => {
     return fetch(`http://localhost:3000/cards/${id}`,{
       method: 'PUT',
       headers: {
         "Content-Type": "application/json"
-      },body: JSON.stringify({url,tittle,author,year})
+      },body: JSON.stringify({url,tittle,author,year,price})
     })
     .then(respuesta => console.log(respuesta))
     .catch(err => console.log(err));
 };
 
-const mostrarAlbumes = (url,tittle,author,year,id) => {
+const mostrarAlbumes = (url,tittle,author,year,price,id) => {
   return fetch('http://localhost:3000/cards',{
     method: 'GET',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({url,tittle,author,year,id})
+    body: JSON.stringify({url,tittle,author,year,price,id})
 })
 }
 

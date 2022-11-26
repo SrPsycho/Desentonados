@@ -1,3 +1,7 @@
 .inputError{
     border: 1px solid red;
 }
+
+.ocultar{
+    display: none;
+}

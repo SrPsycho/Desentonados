@@ -24,3 +24,6 @@
 .btnObj{
     color: aquamarine;
 }
+.ocultarBtn{
+    display: none;
+}
