@@ -13,22 +13,46 @@
         <a href="/index.html"><img src="/assets/images/logo.png" class="logo"></a>
         <a href="/pages/logearse.html" id="linkBtn"><button class="btnIngreso">Ingresar</button></a>
     </header>
-
-    <section class="busquedas">
-        <div class="buscadorPadre">
-            <input type="text" class="buscador_masGrande" placeholder="Titulo, Autor, Año" data-buscador>
-            <button class="lupaBtn" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa_buscador"></button>
-
-        </div>
-        <p class="advertencia"> <e> Por Favor: usar letras capitales en nombres de autores, ej: </e><strong>Arctic Monkeys</strong> </p>
-        <p class="advertencia"> <e>Y mayúsculas en nombres de Albums, ej:</e> <strong>GORILLAZ</strong> </p>
-    </section>
-   
-    <h2 class="resultadoTitulo ocultador" id="tituloBusqueda">Resultados de su busqueda:</h2>
-    <div class="resultadoBusqueda" data-result>
-
+    <div class="contenedorBusqueda">
+        <section class="busquedas">
+            <div class="buscadorPadre">
+                <input type="text" class="buscador_masGrande" placeholder="Titulo, Autor, Año" data-buscador>
+                <button class="lupaBtn" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa_buscador"></button>
+    
+            </div>
+            <p class="advertencia"> <e> Por Favor: usar letras capitales en nombres de autores, ej: </e><strong>Arctic Monkeys</strong> </p>
+            <p class="advertencia"> <e>Y mayúsculas en nombres de Albums, ej:</e> <strong>GORILLAZ</strong> </p>
+        </section>
+       
+        <h2 class="resultadoTitulo ocultador" id="tituloBusqueda">Resultados de su busqueda:</h2>
+        <div class="resultadoBusqueda" data-result></div>
     </div>
+ 
 
+
+    <footer>
+        <img src="/assets/images/logo.png" class="logoFinal">
+
+       <div class="FAQ">
+           <ul>
+               <li><a href="/pages/nosotros.html" class="linkFooter">Quienes somos</a></li>
+               <li><a href="#" class="linkFooter">Políticas de privacidad</a></li>
+               <li><a href="/pages/tiendas.html" class="linkFooter">Nuestras tiendas</a></li>
+               <li><a href="/pages/resp.html" class="linkFooter">Alguien lee todo esto?</a></li>
+           </ul>
+       </div>
+       <form class="mensaje" data-formMsj>
+           <h3 class="tituloFooter">Contáctenos!</h3>
+       
+           <input type="text" placeholder="Nombre" class="nombreFooter" name="name" required maxlength="40">
+           <textarea name="msj" class="msjFooter" cols="30" rows="10" placeholder="Ingrese su mensaje" required maxlength="120"></textarea>
+           <button type="submit" class="btnEnviar">Enviar</button>
+       </form>
+   </footer>
+   <div class="creditos">
+       <h3>Desarrollado por Matias Hausen</h3>
+       <p>&copy;2022</p>
+   </div>
     
     <script type="module" src="/controllers/busqueda_controller.js"></script>
     <script type="module" src="/controllers/ocultador_controller.js"></script>

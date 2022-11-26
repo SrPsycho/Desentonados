@@ -3,10 +3,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px 150px 0 150px;
 }
 .tituloNos{
-    font-size: 3rem;
+    font-size: 5rem;
     margin-top: 55px;
+    margin-bottom: 50px;
+    color: #fefefe;
+    text-shadow: black 5px 5px 2px;
+
 }
 .descripcionNos{
     text-align: justify;
@@ -21,6 +26,8 @@
 .fotoNos{
     width: 550px;
     margin: 0 5px 55px 5px;
+    border-radius: 15px;
+    border: 5px solid #e51599;
 }
 .ocultarBtn{
     display: none;

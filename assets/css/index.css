@@ -1,33 +1,25 @@
-:root{
-    -blanco: #fffefe;
-    -gris: #37373b;
-    -celeste: #96d0ef;
-    -azul: #403ecc;
-    -negro: #151515;
-    -azulZafiro: #086788;
-    /* Otros colores interesantes */
-    -rosa: #e51599;
-    /* Amarillo: #fdd504 */
-    /* Celeste2: #3cc6c8*/
 
-
-    -cuerpo: 'Barlow', sans-serif;
-    -titulo: 'Rubik Glitch', cursive;
-}
 
 *{
     font-family: 'Barlow', sans-serif;
-
     scroll-behavior: smooth;
 }
-
+body{
+    background-color: #37373bc9;
+}
 header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     height: 110px;
-    background-color: #086788;
+    background-color: #37373b;
+    border-bottom: 5px solid #e51599;
+    top: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 2;
 }
+
 .logo{
     width: 100px;
     height: 100px;
@@ -37,18 +29,6 @@ header{
     align-items: center;
     justify-content: center;
 }
-.buscador{
-    height: 50px;
-    width: 250px;
-    color: #e51599;
-    background-color: #37373b;
-    font-family: 'Barlow', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 500;
-    padding: 15px;
-    border-radius: 25px 0px 0px 25px;
-}
-
 .lupa{
     cursor: pointer;
     background-color: transparent;
@@ -62,22 +42,22 @@ header{
     height: 50px;
     width: 250px;
     border-radius: 25px 25px 25px 25px;
-    background-color: #37373b;
+    background-color: #e51599;
 }
 
 button:hover{
     transform: scale(1.1);
     transition-duration: 400ms;
-    box-shadow: 5px 5px 5px;
+    box-shadow: 5px 5px 5px #151515;
 }
-.btnIngreso{
+.btnIngreso,.btnPerfil{
     cursor: pointer;
     font-family: 'Barlow';
     font-size: 1.5rem;
-    background-color: #96d0ef;
-    color: #fffefe;
+    background-color: transparent;
+    color: #e51599;
     border-radius: 10px;
-    border: 1px solid #fffefefe;
+    border: 1px solid #e51599;
     height: 50px;
     width: 150px;
 }
@@ -100,13 +80,17 @@ button:hover{
     justify-content: center;
     align-items: center;
     gap: 55px;
-    height: 500px;
+    height: 90vh;
     background: center url(/assets/images/4.jpg);
     color: #fffefe;
 }
 .segundo{
-    font-size: 3rem;
+    font-size: 5rem;
     text-shadow: #151515 2px 2px 2px;
+}
+.tercero{
+    font-size: 2.5rem;
+    margin: 10px 0px 15px 100px;
 }
 .info{
     font-size: 2rem;
@@ -117,11 +101,11 @@ button:hover{
 
 .btnOfertas{
     width: 250px;
-    height: 100px;
+    height: 70px;
     font-size: 2rem;
-    font-weight: 300;
+    font-weight: 500;
     font-family: 'Barlow', sans-serif;
-    background-color: #086788;
+    background-color: #e51599;
     cursor: pointer;
     color: #fffefe;
     border: none;
@@ -131,7 +115,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #37373b;
+    background-color:  #37373bc9;
 }
 .btnAlbumes{
     display: flex;
@@ -140,15 +124,17 @@ button:hover{
     margin-right: 15px;
 }
 .btn_verTodo{
-    color: #086788;
-    border: none;
+    margin: 15px;
+    color: #e51599;
+    border: 1px solid #e51599;
+    padding: 10px;
+    border-radius: 5px;
     background: transparent;
     cursor: pointer;
     font-size: 1.7rem;
 }
 .btn_verTodo:hover{
     box-shadow: 0px 0px 0px;
-    text-decoration: underline;
     transform: scale(1.2);
 }
 /* Albumes */
@@ -157,14 +143,19 @@ button:hover{
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 50px;
+    margin-bottom: 55px;
 }
 /* Footer */
 footer{
+    border-top: 5px solid #e51599;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #96d0ef;
+    background-color: #37373b;
     padding: 55px 0px 55px 0px;
+    color: #fffefe;
+    z-index: 1;
 }
 
 .logoFinal{
@@ -179,7 +170,7 @@ footer{
 .linkFooter{
     font-family: 'Barlow', sans-serif;
     text-decoration: none;
-    color: #151515;
+    color: #fffefe;;
 }
 .linkFooter:hover{
     color: #e51599;
@@ -202,12 +193,17 @@ footer{
     font-family: 'Barlow', sans-serif;
     text-align: center;
     margin: 15px 0 15px 0;
+    
 }
 .msjFooter{
     resize: none;
+    border-radius: 15px;
+    padding:15px;
 }
 .nombreFooter{
     height: 45px;
+    padding: 15px;
+    border-radius: 15px;
 }
 .btnEnviar{
     border: none;
@@ -216,6 +212,10 @@ footer{
     font-weight: 700;
     font-family: 'Barlow', sans-serif;
     border-radius: 15px;
+    background-color: #e51599; 
+}
+.btnEnviar:hover{
+    color: #fffefe;
 }
 /* Albumes */
 
@@ -236,42 +236,55 @@ footer{
     padding: 15px;
     border-radius: 15px;
     flex-direction: column;
-    border: 2px solid blue;
-    background-color: rgb(233, 233, 233);
+    border: 2px solid #fffefe;
     text-align: center;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 .hijo:hover{
     cursor: pointer;
     transform: scale(1.1);
     transition-duration: 400ms;
-    border-color: aqua;
-    box-shadow: 5px 5px 5px;
+    border-color: #e51599;
+    box-shadow: #e51599 5px 5px 5px;
 }
 .img_album{
-    background-color: aqua;
     width: 200px;
     height: 200px;
     border-radius: 15px;
 }
 .titulo_album{
-    font-family: monospace;
-    font-size: 1.1rem;
+    font-family: 'Barlow', sans-serif;
+    text-decoration: none;
+    color: #fffefe;
+    font-size: 1.3rem;
     margin-top: 15px;
 }
 .autor_album{
     font-size: 1rem;
-    font-family: monospace;
+    font-family: 'Barlow', sans-serif;
+    color: #151515;
     opacity: 75%;
 }
 .anio_album{
-    font-family: monospace;
+    font-family: 'Barlow', sans-serif;
+    color: #151515;
     font-size: 0.8rem;
+}
+.precio_album{
+    margin-top: 10px;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e51599;
+}
+a{
+    text-decoration:none ;
 }
 
 .ocultarBtn{
     display: none;
-}
-
-.btnPerfil{
-    
 }

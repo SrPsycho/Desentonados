@@ -15,6 +15,7 @@
             <a href="/pages/resultados.html"><button class="lupaBtnPrincipal" data-btn-lupa><img src="/assets/icons/search.svg" class="lupa"></button></a>
         </div>
     </header>
+    <main>
         <h2 class="titulo_ingreso">Registrarse</h2>
      
             <div class="forms">
@@ -24,14 +25,16 @@
                 <input type="password" placeholder="Escriba su contraseña" class="input_ingreso" required id="pass_register" minlength="8" maxlength="16" data-passReg>
                 <input type="password" placeholder="Repita su contraseña" class="input_ingreso" required id="pass_again" minlength="8" maxlength="16" data-passReg2>
             </div>
-            <div>
+            <div class="terminos">
                 <input type="checkbox" name="condiciones" id="cond1" required>Acepta los <a href="https://www.youtube.com/watch?v=KnHmoA6Op1o" target="_blank" class="link_terminos">Terminos y condiciones</a>?
             </div>
             
-            <button type="button" class="btn_registro" id="btn_registro" data-form>Registrarte</button>
-    
+            <div class="btns">
+                <button type="button" class="btn_ingreso" id="btn_registro" data-form>Registrarte</button>
+                <a href="/pages/logearse.html"><button class="btn_registro">Login</button></a>
+            </div>
 
-        <a href="/pages/logearse.html"><button class="btn_volver">Login</button></a>
+        
         
     </main>
     <footer>

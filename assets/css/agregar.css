@@ -51,7 +51,7 @@ h2{
     align-items: center;;
     flex-wrap: wrap;
     gap: 25px;
-    margin: 0 0px 0 5px;
+    margin: 15px 0px 70px 0px;
 }
 .hijo{
     max-width: 200px;
@@ -116,4 +116,12 @@ h2{
 .btnBorrar:hover,.btnEditar:hover{
     transition-duration: 400ms;
     transform: scale(1.1);
+}
+
+.tituloTodo{
+    font-family: 'Barlow', sans-serif;
+    font-size: 3rem;
+    color: #fefefe;
+    text-shadow: black 5px 5px 2px;
+    text-decoration: none !important;
 }
