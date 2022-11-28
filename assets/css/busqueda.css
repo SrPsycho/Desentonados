@@ -56,10 +56,29 @@
 }
 strong{
     color: #e51599;
+    text-shadow: #37373b 2px 2px 2px;
 }
 .ocultarBtn{
     display: none;
 }
 .contenedorBusqueda{
     margin-bottom: 55px;
+}
+@media (max-width: 768px) and (min-width: 400px) {
+    .buscador_masGrande{
+        width: 250px;
+    }
+    .resultadoTitulo{
+      text-align: center;
+    }
+    .advertencia{
+        text-align: center;
+        opacity: 75%;
+        font-size: 0.8rem;
+    }
+    .resultadoBusqueda{
+        margin-top: 50px;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
 }

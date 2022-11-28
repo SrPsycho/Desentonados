@@ -20,3 +20,12 @@
     color: #fefefe;
     background-color: #e51599;
 }
+
+@media (max-width: 768px) and (min-width: 400px) {
+    .tituloPerfil{
+       text-align: center;
+    }
+    .btnPerfil{
+       font-size: 0.8rem;
+    }
+}

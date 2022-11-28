@@ -100,11 +100,9 @@ h2{
     cursor: pointer;
     transform: scale(1.1);
     transition-duration: 400ms;
-    border-color: aqua;
     box-shadow: 5px 5px 5px;
 }
 .img_album{
-    background-color: aqua;
     width: 200px;
     height: 200px;
     border-radius: 15px;
@@ -158,4 +156,20 @@ h2{
 
 .sectionBody{
     margin: 0 0 50px 0;
+}
+
+@media (max-width: 768px) and (min-width: 400px) {
+    .btnToggler{
+        font-size: 1.2rem;
+    }
+    #popUp_album{
+        background: #37373b;
+    }
+    .btnToggler2{
+        border-radius: 5px;
+        padding: 5px 20px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+    }
 }

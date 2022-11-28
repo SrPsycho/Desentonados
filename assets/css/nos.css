@@ -32,3 +32,11 @@
 .ocultarBtn{
     display: none;
 }
+@media (max-width: 768px) and (min-width: 400px) {
+    .contenedorNos{
+        flex-direction: column;
+    }
+    .cuerpoNos{
+        margin: 0px 15px 0 10px;
+    }
+}

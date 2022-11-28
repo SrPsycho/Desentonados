@@ -1,6 +1,11 @@
 {
   "perfil": [
- 
+    {
+      "nombre": "Pedro",
+      "email": "pedrito@gmail.com",
+      "pass": "12345678",
+      "id": "88895f31-7998-4b52-9d4d-98ae2df4cc78"
+    }
   ],
   "cards": [
     {
