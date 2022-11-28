@@ -29,3 +29,11 @@
        font-size: 0.8rem;
     }
 }
+@media (max-width: 399px) {
+    .tituloPerfil{
+        text-align: center;
+     }
+     .btnPerfil{
+        font-size: 0.8rem;
+     }
+}

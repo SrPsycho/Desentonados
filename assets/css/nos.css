@@ -40,3 +40,11 @@
         margin: 0px 15px 0 10px;
     }
 }
+@media (max-width: 399px) {
+    .contenedorNos{
+        flex-direction: column;
+    }
+    .cuerpoNos{
+        margin: 0px 25px 0 25px;
+    }
+}

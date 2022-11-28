@@ -82,3 +82,21 @@ strong{
         margin-bottom: 50px;
     }
 }
+@media (max-width: 399px) {
+    .buscador_masGrande{
+        width: 250px;
+    }
+    .resultadoTitulo{
+      text-align: center;
+    }
+    .advertencia{
+        text-align: center;
+        opacity: 75%;
+        font-size: 0.8rem;
+    }
+    .resultadoBusqueda{
+        margin-top: 50px;
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+}
